@@ -1,42 +1,126 @@
 # deep-learning-project
-# Image Classification using ResNet18 (CIFAR-10)
+# Image Classification using Transfer Learning (ResNet18 on CIFAR-10)
 
-## 📌 Setup Instructions
+## 📌 Overview
 
-### 1. Clone Repository
+This project implements an image classification system using **Transfer Learning** with a pretrained ResNet18 model. The model is trained and evaluated on the CIFAR-10 dataset, which contains 10 different image classes.
 
-git clone <your-repo-link>
+---
 
-### 2. Install Dependencies
+## 🎯 Objectives
 
-pip install torch==2.0.0 torchvision==0.15.0 matplotlib==3.7.0
+* Apply transfer learning using ResNet18
+* Train a deep learning model on image data
+* Evaluate model performance using metrics and visualizations
+* Build an image prediction system
 
-### 3. Run Notebook
+---
 
-jupyter notebook
+## 📂 Dataset
 
-Open `notebook.ipynb` and run all cells.
+* **Dataset Used:** CIFAR-10
+* **Classes:**
 
-## 📊 Dataset
+  * Airplane
+  * Automobile
+  * Bird
+  * Cat
+  * Deer
+  * Dog
+  * Frog
+  * Horse
+  * Ship
+  * Truck
 
-CIFAR-10 dataset is automatically downloaded using torchvision.
+The dataset is automatically downloaded using torchvision.
 
-## 💾 Model File
+---
 
-Download model from: <Google Drive link>
+## ⚙️ Technologies Used
 
-## 🔍 Run Inference
+* Python
+* PyTorch
+* Torchvision
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
 
-Load model using:
-torch.load("model.pth")
+---
 
-## 📈 Output
+## 🧠 Model Details
 
-* Training loss graph
-* Accuracy score
-* Predictions
+* Pretrained **ResNet18** model used
+* Final fully connected layer modified for 10 classes
+* Optimizer: Adam
+* Loss Function: CrossEntropyLoss
 
-## 📌 Notes
+---
 
-* Training done for 3 epochs
-* Transfer learning using pretrained ResNet18
+## 🚀 Features
+
+* Transfer learning using ResNet18
+* Training and evaluation pipeline
+* Training loss and accuracy visualization
+* Confusion matrix for performance evaluation
+* Image prediction system
+* Visualization of predicted vs actual labels
+
+---
+
+## 📊 Visualizations
+
+The project includes:
+
+* Training Loss Curve
+* Training Accuracy Curve
+* Confusion Matrix Heatmap
+* Sample Image Predictions
+
+---
+
+## 🧪 How to Run
+
+1. Clone the repository or download files
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Open the Jupyter Notebook
+4. Run all cells
+
+---
+
+## 📈 Results
+
+* Model successfully learns image features from CIFAR-10
+* Achieves good classification performance
+* Predictions visually verified using sample images
+
+---
+
+## 🔮 Future Improvements
+
+* Increase number of training epochs
+* Add data augmentation
+* Use more advanced architectures (ResNet50, EfficientNet)
+* Deploy as a web application
+
+---
+
+## 📎 Project Structure
+
+```
+Task-2/
+│
+├── Image_Classification.ipynb
+├── README.md
+├── requirements.txt
+```
+
+---
+
+## 👨‍💻 Author
+
+Sakshi Garg
